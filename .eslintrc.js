@@ -1,13 +1,11 @@
 module.exports = {
   root: true,
   extends: [
-    'plugin:vue/base',
-    'plugin:prettier/recommended',
+    'plugin:vue/base'
   ],
   // required to lint *.vue files
   plugins: [
-    'vue',
-    'prettier'
+    'vue'
   ],
   // add your custom rules here
   rules: {
