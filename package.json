@@ -20,7 +20,7 @@
     "ionic-vue-form": "^1.2.2",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.2",
-    "vue": "^3.0.0-rc.10",
+    "vue": "3.0.0",
     "vue-chartjs": "^3.5.1",
     "vue-router": "^4.0.0-beta.9"
   },
