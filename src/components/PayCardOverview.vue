@@ -2,7 +2,7 @@
 	<ion-grid>
 		<ion-row class="first-row">
 			<ion-col>
-					<ion-icon name="arrow-round-back" @click="back"></ion-icon>
+					<ion-icon icon="arrow-round-back" @click="back"></ion-icon>
 			</ion-col>
 			<ion-col>
 				<div class="balance">Balance</div>
