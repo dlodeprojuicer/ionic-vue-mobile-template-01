@@ -8,7 +8,7 @@
       </ion-col>
       <ion-col>
         <ion-button color="dark" disabled>
-          <ion-icon :name="swapHorizontal" class="btn-icon"></ion-icon>Transfer
+          <ion-icon :icon="swapHorizontal" class="btn-icon"></ion-icon>Transfer
         </ion-button>
       </ion-col>
     </ion-row>

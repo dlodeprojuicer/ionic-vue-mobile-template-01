@@ -4,7 +4,7 @@
       <ion-row>
         <ion-col class="overview">Overview</ion-col>
         <ion-col>
-          <ion-icon :name="add" class="overview-add"></ion-icon>
+          <ion-icon :icon="add" class="overview-add"></ion-icon>
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -21,7 +21,7 @@
 
 <script>
 import { IonPage, IonGrid, IonRow, IonCol, IonIcon } from "@ionic/vue";
-import { person, add } from "ionicons/icons";
+import { add } from "ionicons/icons";
 
 import SectionDivider from "../components/SectionDivider";
 import CardWallet from "../components/CardWallet";
@@ -45,7 +45,6 @@ export default {
   },
   setup() {
     return {
-      person,
       add
     }
   },
@@ -113,12 +112,12 @@ export default {
   font-weight: 600;
 }
 
-.overview-add {
-  background: #ffffff;
-  padding: 0px;
-  border-radius: 10px;
-  color: #000;
-  float: right;
-  font-size: 28px;
-}
+// .overview-add {
+//   background: #ffffff;
+//   padding: 0px;
+//   border-radius: 10px;
+//   color: #000;
+//   float: right;
+//   font-size: 28px;
+// }
 </style>
