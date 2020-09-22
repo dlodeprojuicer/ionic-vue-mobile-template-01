@@ -1,7 +1,7 @@
 <template>
   <ion-list>
     <ion-item v-for="(item,index) in data" :key="index">
-      <ion-icon slot="start" :name="person"></ion-icon>
+      <ion-icon slot="start" :icon="person"></ion-icon>
       <ion-label>
         <h2>{{ item.name }}</h2>
         <p>{{ item.date }}</p>

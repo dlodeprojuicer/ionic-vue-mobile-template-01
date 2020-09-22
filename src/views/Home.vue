@@ -112,12 +112,12 @@ export default {
   font-weight: 600;
 }
 
-// .overview-add {
-//   background: #ffffff;
-//   padding: 0px;
-//   border-radius: 10px;
-//   color: #000;
-//   float: right;
-//   font-size: 28px;
-// }
+.overview-add {
+  background: #ffffff;
+  padding: 0px;
+  border-radius: 10px;
+  color: #000;
+  float: right;
+  font-size: 28px;
+}
 </style>
