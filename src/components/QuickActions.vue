@@ -3,7 +3,7 @@
     <ion-row>
       <ion-col>
         <ion-button color="dark" @click="pay">
-          <ion-icon icon="card" class="btn-icon"></ion-icon>Pay
+          <ion-icon :icon="card" class="btn-icon"></ion-icon>Pay
         </ion-button>
       </ion-col>
       <ion-col>

@@ -2,7 +2,7 @@
 	<ion-grid>
 		<ion-row class="first-row">
 			<ion-col>
-					<ion-icon icon="arrow-round-back" @click="back"></ion-icon>
+					<ion-icon :icon="arrowBack" @click="back"></ion-icon>
 			</ion-col>
 			<ion-col>
 				<div class="balance">Balance</div>
@@ -28,10 +28,16 @@
 
 <script>
 import { IonGrid, IonRow, IonCol, IonIcon } from "@ionic/vue";
+import { arrowBack } from 'ionicons/icons';
 
 export default {
 	name: "pay-card-overview",
 	components: { IonGrid, IonRow, IonCol, IonIcon },
+  setup() {
+    return {
+			arrowBack
+    }
+  },
   methods: {
 		back() {
 			this.$router.back();
