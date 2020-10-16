@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "@capacitor/core": "^2.4.1",
-    "@ionic/vue": "^0.5.0",
-    "@ionic/vue-router": "^0.5.0",
+    "@ionic/vue": "^5.4.0",
+    "@ionic/vue-router": "^5.4.0",
     "chart.js": "^2.9.3",
     "core-js": "^3.6.5",
     "ionic-vue-form": "^1.2.2",
