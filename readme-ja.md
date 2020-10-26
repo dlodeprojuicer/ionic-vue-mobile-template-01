@@ -21,7 +21,7 @@ npm run serve
 ## デザイン
 ![alt text](/design.png "Logo Title Text 1")
 
-## ネイティブについて
+## ネイティブアプリについて
 
 ネイティブアプリをビルドするために [Capacitor](https://capacitorjs.com/docs/getting-started) を使用しました。
 
