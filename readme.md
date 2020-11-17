@@ -7,8 +7,6 @@ Hybrid mobile template built with ([latest](https://ionicframework.com/blog/anno
 
 [Demo](https://ionic-vue-mobile-template-01.netlify.app)
 
-<a href="https://www.buymeacoffee.com/simomafuxwana" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="120px" height="30px" style="height: 30px !important;width: 120px !important;" ></a>
-
 ## Project setup
 ```
 npm install
@@ -52,9 +50,16 @@ Using [Capacitor](https://capacitorjs.com/docs/getting-started) for native build
 - [Getting started](https://ionicframework.com/docs/vue/quickstart)
 - [Changelog](https://github.com/ionic-team/ionic-framework/blob/master/CHANGELOG.md)
 
+## Template affiliates
+I want to keep doing these templates for free for as long as possible. I have joined a few affialate programs to help take care of the costs. 
+- [Pixeltrue](https://www.pixeltrue.com/?via=simo) - High quality illustrations that will help you build breath-taking websites.
+- [Getrewardful](https://www.getrewardful.com/?via=simo) - Create your own affilaite program.
+
+Alternatively you can buy me a coffee <a href="https://www.buymeacoffee.com/simomafuxwana" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="120px" height="30px" style="height: 30px !important;width: 120px !important;" ></a>
+
 
 ## Credits
--  [manuelroviradesign](https://www.instagram.com/manuelroviradesign/) via [We Love Web Design](https://www.instagram.com/p/CC1GFMrBB6T/) - App design inspiration
+- [manuelroviradesign](https://www.instagram.com/manuelroviradesign/) via [We Love Web Design](https://www.instagram.com/p/CC1GFMrBB6T/) - App design inspiration
 - [Tami Maiwashe](https://www.linkedin.com/in/tami-maiwashe-32824a19a/) - Documentation
 - [おかきょー](https://twitter.com/31415O_Kyo) - [Japanese doc translation](https://github.com/dlodeprojuicer/ionic-vue-mobile-template-01/blob/master/readme-ja.md)
 
