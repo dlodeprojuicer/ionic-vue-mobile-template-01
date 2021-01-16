@@ -1,8 +1,8 @@
 .DS_Store
-*.DS_Store
 node_modules
-# android
-# ios
+dist
+android
+ios
 .gradle
 
 # local env files
@@ -27,8 +27,7 @@ api_key
 config.json
 build.json
 
-
 # Cordova
-/src-cordova/platforms
-/src-cordova/plugins
-/public/cordova.js
+# /src-cordova/platforms
+# /src-cordova/plugins
+# /public/cordova.js
