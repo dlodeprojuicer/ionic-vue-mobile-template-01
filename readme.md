@@ -1,5 +1,5 @@
 ## Ionic Vue Mobile Template 01 
-![Netlify Status](https://api.netlify.com/api/v1/badges/42a821d3-045b-458c-b950-b9b392048c4e/deploy-status)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f4e2583e-6ace-4424-8e3c-afe79be24d85/deploy-status)](https://app.netlify.com/sites/ionic-vue-mobile-template-01/deploys)
 
 
 Hybrid mobile template built with Ionic Vue using capacitor for native builds.
