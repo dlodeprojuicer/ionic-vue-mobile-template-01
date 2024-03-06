@@ -12,7 +12,7 @@
 			<ion-row class="reason-wrapper">
 			<ion-item>
 				<ion-label class="reason">Reason</ion-label>
-				<ion-select placeholder="Select One">
+				<ion-select aria-label="Select One">
 					<ion-select-option value="payment">Payment</ion-select-option>
 					<ion-select-option value="transfer">Transfer</ion-select-option>
 					<ion-select-option value="refund">Refund</ion-select-option>

@@ -13,7 +13,7 @@ npm install
 
 ### Run on the browser - development
 ```
-npm run serve
+npm run dev
 ```
 
 ## Design

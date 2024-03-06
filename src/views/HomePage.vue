@@ -1,47 +1,49 @@
 <template>
   <ion-page class="ion-padding">
-    <ion-grid class="overview-wrapper">
-      <ion-row>
-        <ion-col class="overview">Overview</ion-col>
-        <ion-col>
-          <ion-icon :icon="add" class="overview-add"></ion-icon>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+    <ion-content>
+      <ion-grid class="overview-wrapper">
+        <ion-row>
+          <ion-col class="overview">Overview</ion-col>
+          <ion-col>
+            <ion-icon :icon="add" class="overview-add"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
 
-    <CardWallet :data="cards" />
+      <CardWallet :data="cards" />
 
-    <SectionDivider data="Expenses" />
+      <SectionDivider data="Expenses" />
 
-    <RecentList :data="recentList" />
+      <RecentList :data="recentList"/>
 
-    <QuickActions />
+      <QuickActions />
+    </ion-content>
   </ion-page>
 </template>
 
 <script>
-import { IonPage, IonGrid, IonRow, IonCol, IonIcon } from "@ionic/vue";
+import { IonCol, IonGrid, IonIcon, IonPage, IonRow, IonContent } from '@ionic/vue';
 import { add } from "ionicons/icons";
-
-import SectionDivider from "../components/SectionDivider";
-import CardWallet from "../components/CardWallet";
-import RecentList from "../components/RecentList";
-import QuickActions from "../components/QuickActions";
+import CardWallet from "@/components/CardWallet.vue";
+import SectionDivider from "@/components/SectionDivider.vue";
+import RecentList from "@/components/RecentList.vue";
+import QuickActions from "@/components/QuickActions.vue";
 
 export default {
-  name: "home",
+  name: "homePage",
   title: "Home",
   requiresAuth: false,
   components: {
+    IonContent,
+    QuickActions,
+    RecentList,
+    SectionDivider,
     IonPage,
     IonGrid,
     IonRow,
     IonCol,
     IonIcon,
-    SectionDivider,
     CardWallet,
-    RecentList,
-    QuickActions,
   },
   setup() {
     return {
@@ -102,7 +104,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .overview-wrapper {
   margin-bottom: 10px;
 }
@@ -114,7 +116,7 @@ export default {
 
 .overview-add {
   background: #ffffff;
-  padding: 0px;
+  padding: 0;
   border-radius: 10px;
   color: #000;
   float: right;

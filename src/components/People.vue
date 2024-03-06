@@ -1,22 +1,27 @@
 <template>
-  <ion-slides>
-    <ion-slide v-for="(item, index) in data" :key="index">
-      <ion-card>
-        <img :src="item.image" width="100%" />
-        <ion-card-header>
-          <ion-card-title>{{ item.name }} {{ item.lastname }}</ion-card-title>
-        </ion-card-header>
-      </ion-card>
-    </ion-slide>
-  </ion-slides>
+  <div style="margin-bottom: 15px;">
+    <swiper :slides-per-view="3">
+      <swiper-slide v-for="(item, index) in data" :key="index">
+        <div class="white-card">
+          <ion-card-header>
+            <img :src="item.image"  alt="avatar"/>
+            <ion-card-title>{{ item.name }}</ion-card-title>
+          </ion-card-header>
+        </div>
+      </swiper-slide>
+    </swiper>
+  </div>
 </template>
 
 <script>
-import { IonSlides, IonSlide, IonCard, IonCardHeader, IonCardTitle } from "@ionic/vue";
+import { IonCard, IonCardHeader, IonCardTitle } from "@ionic/vue";
+import 'swiper/css';
+import '@ionic/vue/css/ionic-swiper.css'
+import { Swiper, SwiperSlide } from "swiper/vue";
 
 export default {
-  name: "people",
-  components: { IonSlides, IonSlide, IonCard, IonCardHeader, IonCardTitle },
+  name: "peopleComponent",
+  components: { Swiper, SwiperSlide, IonCard, IonCardHeader, IonCardTitle },
   props: {
     data: {
       type: Array,
@@ -29,26 +34,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-ion-slide {
-  width: 120px !important;
-}
-
-ion-card {
+.white-card {
   background: #ffffff;
-  width: 120px !important;
+  width: 120px;
+  height: 120px !important;
   border-radius: 20px;
-  margin: 5px;
+  margin: 0 5px;
 }
 
 img {
   padding: 7px;
   border-radius: 20px;
-  height: 90px;
 }
 
 ion-card-title {
-  font-size: 12px !important;
-  text-align: left;
+  font-size: 11px !important;
+  text-align: center;
 }
 
 ion-button {

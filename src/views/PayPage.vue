@@ -1,8 +1,8 @@
 <template>
   <ion-page class="ion-padding">
     <PayCardOverview />
-    <People :data="people" />
-    <Form />
+    <PeopleComponent :data="people" />
+    <FormComponent />
     <ion-button color="dark">
       Send
     </ion-button>
@@ -12,18 +12,18 @@
 <script>
 import { IonPage, IonButton } from "@ionic/vue";
 
-import Form from "../components/Form";
-import People from "../components/People";
-import PayCardOverview from "../components/PayCardOverview";
+import FormComponent from "@/components/FormComponent.vue";
+import PeopleComponent from "@/components/People.vue";
+import PayCardOverview from "@/components/PayCardOverview.vue";
 
 export default {
-  name: "pay",
+  name: "payPage",
   title: "Pay",
   requiresAuth: false,
   components: {
     IonPage,
-    Form,
-    People,
+    FormComponent,
+    PeopleComponent,
     PayCardOverview,
     IonButton
   },

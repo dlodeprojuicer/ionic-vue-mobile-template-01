@@ -1,5 +1,5 @@
 <template>
-	<ion-grid>
+	<ion-grid class="grid">
 		<ion-row class="first-row">
 			<ion-col>
 					<ion-icon :icon="arrowBack" @click="back"></ion-icon>
@@ -47,7 +47,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-ion-grid {
+.grid {
 	border-radius: 0 0 40px 40px;
 	background: #ffffff;
 	height: 160px;
