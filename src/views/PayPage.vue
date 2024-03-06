@@ -80,6 +80,10 @@ export default {
   }
 }
 
+ion-grid {
+  flex: none;
+}
+
 ion-button {
   width: 100%;
   --border-radius: 20px;

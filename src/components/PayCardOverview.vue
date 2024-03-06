@@ -52,7 +52,7 @@ export default {
 	background: #ffffff;
 	height: 160px;
 	padding: 5px 0 0 35px;
-	margin: -15px -15px 15px -15px;
+	margin: -15px -15px 0 -15px;
 }
 
 .first-row {

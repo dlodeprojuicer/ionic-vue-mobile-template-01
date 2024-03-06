@@ -1,5 +1,5 @@
 <template>
-  <div style="margin-bottom: 15px;">
+  <div>
     <swiper :slides-per-view="3">
       <swiper-slide v-for="(item, index) in data" :key="index">
         <div class="white-card">
@@ -34,6 +34,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+ion-card-header {
+  padding: 0;
+}
 .white-card {
   background: #ffffff;
   width: 120px;
