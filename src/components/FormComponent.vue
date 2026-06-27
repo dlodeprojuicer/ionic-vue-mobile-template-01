@@ -23,18 +23,10 @@
 	</div>
 </template>
 
-<script>
+<script setup lang="ts">
 import { IonGrid, IonRow, IonCol, IonLabel, IonInput, IonSelectOption, IonSelect, IonItem } from "@ionic/vue";
 
-export default {
-	name: "form-component",
-	components: { IonGrid, IonRow, IonCol, IonLabel, IonInput, IonSelectOption, IonSelect, IonItem },
-  data() {
-		return {
-			tokens: ["R 25", "R 50", "R 100", "R 200"]
-		}
-	}
-}
+const tokens: string[] = ["R 25", "R 50", "R 100", "R 200"];
 </script>
 
 <style lang="scss" scoped>

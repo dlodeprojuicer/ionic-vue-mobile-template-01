@@ -9,68 +9,36 @@
   </ion-page>
 </template>
 
-<script>
+<script setup lang="ts">
 import { IonPage, IonButton } from "@ionic/vue";
 
 import FormComponent from "@/components/FormComponent.vue";
 import PeopleComponent from "@/components/People.vue";
 import PayCardOverview from "@/components/PayCardOverview.vue";
 
-export default {
-  name: "payPage",
-  title: "Pay",
-  requiresAuth: false,
-  components: {
-    IonPage,
-    FormComponent,
-    PeopleComponent,
-    PayCardOverview,
-    IonButton
+interface Person {
+  name: string;
+  image: string;
+}
+
+const people: Person[] = [
+  {
+    name: "Person Name",
+    image: "assets/img/makazoli.png"
   },
-  data() {
-    return {
-      cards: [
-        {
-          cardNumber: "4524 3428 898 239",
-          balance: "12 354.05",
-          accountName: "Savings",
-          expDate: "02/2020",
-        },
-        {
-          cardNumber: "9483 2394 8987 8391",
-          balance: "1435.20",
-          accountName: "Savings",
-          expDate: "06/2024",
-        },
-        {
-          cardNumber: "3079 485 2395 3944",
-          balance: "8 200",
-          accountName: "Savings",
-          expDate: "08/2022",
-        },
-      ],
-      people: [
-        {
-          name: "Person Name",
-          image: "assets/img/makazoli.png"
-        },
-        {
-          name: "Person Name",
-          image: "assets/img/max.png"
-        },
-        {
-          name: "Person Name",
-          image: "assets/img/lewis.png"
-        },
-        {
-          name: "Person Name",
-          image: "assets/img/snoop.png"
-        }
-      ]
-    };
+  {
+    name: "Person Name",
+    image: "assets/img/max.png"
   },
-  methods: {},
-};
+  {
+    name: "Person Name",
+    image: "assets/img/lewis.png"
+  },
+  {
+    name: "Person Name",
+    image: "assets/img/snoop.png"
+  }
+];
 </script>
 
 <style lang="scss" scoped>

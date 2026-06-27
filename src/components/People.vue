@@ -13,24 +13,24 @@
   </div>
 </template>
 
-<script>
-import { IonCard, IonCardHeader, IonCardTitle } from "@ionic/vue";
+<script setup lang="ts">
+import { IonCardHeader, IonCardTitle } from "@ionic/vue";
 import 'swiper/css';
 import '@ionic/vue/css/ionic-swiper.css'
 import { Swiper, SwiperSlide } from "swiper/vue";
 
-export default {
-  name: "peopleComponent",
-  components: { Swiper, SwiperSlide, IonCard, IonCardHeader, IonCardTitle },
-  props: {
-    data: {
-      type: Array,
-      required: true,
-      default: () => []
-    }
-  },
-  methods: {},
-};
+interface Person {
+  name: string;
+  image: string;
+}
+
+defineOptions({
+  name: "PeopleComponent",
+});
+
+defineProps<{
+  data: Person[];
+}>();
 </script>
 
 <style lang="scss" scoped>

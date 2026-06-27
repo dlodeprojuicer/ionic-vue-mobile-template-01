@@ -4,16 +4,10 @@
   </div>
 </template>
 
-<script>
-  export default {
-    name: "section-divider",
-    props: {
-      data: {
-        type: String,
-        required: true
-      }
-    },
-  }
+<script setup lang="ts">
+defineProps<{
+  data: string;
+}>();
 </script>
 
 <style>

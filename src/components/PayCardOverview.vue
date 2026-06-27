@@ -26,24 +26,16 @@
 	</ion-grid>
 </template>
 
-<script>
+<script setup lang="ts">
 import { IonGrid, IonRow, IonCol, IonIcon } from "@ionic/vue";
 import { arrowBack } from 'ionicons/icons';
+import { useRouter } from "vue-router";
 
-export default {
-	name: "pay-card-overview",
-	components: { IonGrid, IonRow, IonCol, IonIcon },
-  setup() {
-    return {
-			arrowBack
-    }
-  },
-  methods: {
-		back() {
-			this.$router.back();
-		}
-	}
-}
+const router = useRouter();
+
+const back = () => {
+  router.back();
+};
 </script>
 
 <style lang="scss" scoped>

@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
-import { RouteRecordRaw } from 'vue-router';
+import type { RouteRecordRaw } from 'vue-router';
 import HomePage from '@/views/HomePage.vue';
 import PayPage from '@/views/PayPage.vue';
 

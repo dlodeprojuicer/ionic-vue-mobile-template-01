@@ -15,24 +15,15 @@
   </ion-grid>
 </template>
 
-<script>
+<script setup lang="ts">
 import { IonGrid, IonRow, IonCol, IonIcon, IonButton } from "@ionic/vue";
 import { card, swapHorizontal } from "ionicons/icons";
+import { useRouter } from "vue-router";
 
-export default {
-  name: "quick-actions",
-  components: { IonGrid, IonRow, IonCol, IonIcon, IonButton },
-  setup() {
-    return {
-      card,
-      swapHorizontal
-    }
-  },
-	methods: {
-		pay() {
-			this.$router.push("pay");
-		}
-	}
+const router = useRouter();
+
+const pay = () => {
+  router.push("pay");
 };
 </script>
 

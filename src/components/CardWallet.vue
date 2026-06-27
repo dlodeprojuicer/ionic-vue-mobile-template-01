@@ -25,27 +25,23 @@
   </swiper>
 </template>
 
-<script>
+<script setup lang="ts">
 import { IonGrid, IonRow, IonCol, IonIcon } from "@ionic/vue";
 import { cardOutline } from "ionicons/icons";
 import 'swiper/css';
 import '@ionic/vue/css/ionic-swiper.css'
 import { Swiper, SwiperSlide } from "swiper/vue";
 
-export default {
-  name: "card-wallet",
-  components: { Swiper, SwiperSlide, IonGrid, IonRow, IonCol, IonIcon },
-  props: {
-    data: {
-      type: Array,
-      required: true,
-      default: () => []
-    }
-  },
-  setup() {
-    return { cardOutline }
-  }
+interface WalletCard {
+  cardNumber: string;
+  balance: string;
+  accountName: string;
+  expDate: string;
 }
+
+defineProps<{
+  data: WalletCard[];
+}>();
 </script>
 
 <style lang="scss" scoped>
